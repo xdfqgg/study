@@ -12,7 +12,7 @@
                 "-Wall",
                 "-Wextra",
                 "-pedantic",
-                "-O0",
+                "-O2",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
