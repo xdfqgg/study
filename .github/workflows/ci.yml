@@ -1,0 +1,41 @@
+# GitHub Actions CI —— 每次 push/PR 自动编译 + 跑测试
+name: C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ① 拉取你的代码
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ② 安装编译器
+      - name: Install g++
+        run: sudo apt-get update && sudo apt-get install -y g++
+
+      # ③ 编译三个 demo（-Wall -Wextra 严格检查）
+      - name: Compile demos
+        run: |
+          g++ -std=c++20 -O2 -Wall -Wextra exception_demo.cpp -o exception_demo
+          g++ -std=c++20 -O2 -Wall -Wextra file_io_raii.cpp -o file_io_raii
+          g++ -std=c++20 -O2 -Wall -Wextra logging_demo.cpp -o logging_demo
+
+      # ④ 运行 demo，确认行为正确
+      - name: Run demos
+        run: |
+          ./exception_demo
+          ./file_io_raii
+          ./logging_demo
+
+      # ⑤ 编译并运行 Catch2 单元测试
+      - name: Compile & run tests
+        run: |
+          g++ -std=c++20 -O2 -Wall -Wextra test_examples.cpp -o test_examples
+          ./test_examples
