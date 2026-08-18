@@ -1,0 +1,7 @@
+# ninja log v7
+33	2229	8087211301547190	CMakeFiles/mylib.dir/src/mylib.cpp.obj	95a50576c83ada16
+40	3074	8087211301646064	CMakeFiles/demo.dir/src/main.cpp.obj	dd2a46d35ccb4de2
+2280	3273	8087211324820045	libmylib.a	103e8fd9e75321c4
+3273	3460	8087211333949474	demo.exe	c4d667da42a145da
+48	16481	8087211301694897	CMakeFiles/tests.dir/tests/test_main.cpp.obj	2c30e8c040647bee
+16482	16779	8087211465978460	tests.exe	fe9a7d07ed595bc7

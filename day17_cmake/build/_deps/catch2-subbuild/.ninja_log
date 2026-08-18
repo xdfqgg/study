@@ -1,0 +1,21 @@
+# ninja log v7
+1	82	8087210887735266	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	51389741c084b800
+1	82	8087210887735266	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	51389741c084b800
+82	38233	8087211269192707	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	d2ad10c554a18623
+82	38233	8087211269192707	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	d2ad10c554a18623
+38233	38396	8087211269303178	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	67ac2b246067e1e0
+38233	38396	8087211269303178	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	67ac2b246067e1e0
+38396	38469	8087211271600821	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	4a697caa140aaa04
+38396	38469	8087211271600821	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	4a697caa140aaa04
+38469	38537	8087211272289198	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	85058033a52366b2
+38469	38537	8087211272289198	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	85058033a52366b2
+38537	38609	8087211272990162	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	f3a94fe0776b7260
+38537	38609	8087211272990162	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	f3a94fe0776b7260
+38610	38677	8087211273667718	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	9180d42e728fe4cf
+38610	38677	8087211273667718	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	9180d42e728fe4cf
+38677	39228	8087211278531177	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	5f2710ff991ee7b1
+38677	39228	8087211278531177	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	5f2710ff991ee7b1
+39229	40372	8087211289951557	CMakeFiles/catch2-populate-complete	898893d1a40deeb8
+39229	40372	8087211289951557	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	898893d1a40deeb8
+39229	40372	8087211289951557	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete	898893d1a40deeb8
+39229	40372	8087211289951557	F:/c++20study/day17_cmake/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	898893d1a40deeb8

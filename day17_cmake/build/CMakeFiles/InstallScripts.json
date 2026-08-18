@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"F:/c++20study/day17_cmake/build/cmake_install.cmake",
+		"F:/c++20study/day17_cmake/build/_deps/catch2-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

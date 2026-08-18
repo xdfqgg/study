@@ -1,0 +1,9 @@
+F:/c++20study/day17_cmake/build/CMakeFiles/mylib.dir
+F:/c++20study/day17_cmake/build/CMakeFiles/demo.dir
+F:/c++20study/day17_cmake/build/CMakeFiles/tests.dir
+F:/c++20study/day17_cmake/build/CMakeFiles/test.dir
+F:/c++20study/day17_cmake/build/CMakeFiles/edit_cache.dir
+F:/c++20study/day17_cmake/build/CMakeFiles/rebuild_cache.dir
+F:/c++20study/day17_cmake/build/_deps/catch2-build/CMakeFiles/test.dir
+F:/c++20study/day17_cmake/build/_deps/catch2-build/CMakeFiles/edit_cache.dir
+F:/c++20study/day17_cmake/build/_deps/catch2-build/CMakeFiles/rebuild_cache.dir

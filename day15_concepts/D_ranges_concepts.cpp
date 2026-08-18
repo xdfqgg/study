@@ -23,8 +23,8 @@ auto filter_sum(R &&range, Pred pred)
 
 int main()
 {
-    std::vector<int> v{1, 2, 3, 4, 5, 6};
-    std::cout << filter_sum(v, [](int x)
-                            { return x % 2 == 0; })
+    std::vector<std::string> v{"a", "bb", "ccc", "d"};
+    std::cout << filter_sum(v, [](auto x)
+                            { return x.size() > 1;  })
               << '\n';
 }
