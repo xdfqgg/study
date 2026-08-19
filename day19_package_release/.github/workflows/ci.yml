@@ -1,0 +1,61 @@
+name: Day19 CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            triplet: x64-linux
+          - os: windows-latest
+            triplet: x64-windows
+          - os: macos-latest
+            triplet: x64-osx
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up vcpkg
+        uses: lukka/get-vcpkg@v20
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          "$VCPKG_ROOT/vcpkg" install --triplet "${{ matrix.triplet }}"
+
+      - name: Configure
+        shell: bash
+        run: |
+          cmake -S . -B build \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" \
+            -DVCPKG_TARGET_TRIPLET="${{ matrix.triplet }}"
+
+      - name: Build
+        run: cmake --build build --config Release --parallel
+
+      - name: Test
+        run: ctest --test-dir build --build-config Release --output-on-failure
+
+      - name: Install package files
+        run: cmake --install build --prefix package --config Release
+
+      - name: Create ZIP package
+        shell: bash
+        run: cmake -E tar cfv "day19-${{ matrix.os }}.zip" --format=zip package
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: day19-${{ matrix.os }}
+          path: day19-${{ matrix.os }}.zip
